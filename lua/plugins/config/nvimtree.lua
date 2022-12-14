@@ -1,4 +1,6 @@
-return require("nvim-tree").setup({
+local nvimtree = require("nvim-tree")
+
+nvimtree.setup({
     disable_netrw = true,
     hijack_netrw = true,
     open_on_setup = false,
@@ -69,8 +71,7 @@ return require("nvim-tree").setup({
             },
         },
     },
-    filters = {
-        dotfiles = false,
-    },
 }
 )
+
+vim.api.nvim_set_keymap('n', '<Leader>n', ':NvimTreeToggle', { noremap = true })

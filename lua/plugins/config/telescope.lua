@@ -1,6 +1,14 @@
-local builtin = require('telescope.builtin')
+local nvim_telescope = require('telescope')
 
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+nvim_telescope.setup {
+    defaults = {
+        prompt_position = "top",
+        layout_strategy = "horizontal",
+    },
+    mappings = {
+        ["i"] = {
+            ["<C-k>"] = "previous",
+            ["<C-j>"] = "next",
+        },
+    },
+}
