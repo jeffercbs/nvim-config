@@ -11,7 +11,7 @@ $ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-da
 ### Clone the repo
 
 ```shell
-$ git clone https://github.com/jefercbs/nvim-config $HOME\AppData\Local\nvim --depth 1 && nvim
+$ git clone https://github.com/jeffercbs/nvim-config.git $HOME\AppData\Local\nvim --depth 1 && nvim
 ```
 
 ### run packer
